@@ -128,16 +128,87 @@
             <h2>Projects</h2>
             <div class="project-grid">
                 <div class="project-card">
-                    <h3>Network Security & Threat Detection</h3>
-                    <p>Set up and configured a virtual cybersecurity lab for penetration testing using Kali Linux, Metasploit, and Nmap.Performed vulnerability scanning and simulated real-world attack scenarios.</p>
+                    <h3>CyberLab: Network Security & Threat Detection Simulation</h3>
+                    <p>Key Enhancements:
+
+Implemented advanced attack vectors (e.g., living off the land attacks using PowerShell or WMI for lateral movement, exploiting SMB vulnerabilities).
+
+Used tools like Metasploit, Nmap, Burp Suite, and Wireshark for initial compromise and network monitoring.
+
+Created a realistic attack chain where different phases of attack were mapped (e.g., Initial Access → Privilege Escalation → Lateral Movement → Data Exfiltration).
+
+Measurable Outcomes:
+
+Discovered and exploited vulnerabilities in the network that could have resulted in a complete compromise of the environment.
+
+Successfully mitigated attacks by patching vulnerabilities and applying best practices for firewall configuration and network segmentation.
+
+Generated detailed vulnerability reports with remediation advice for each vulnerability.
+
+Challenges Overcome:
+
+Integrating multiple tools (e.g., Metasploit, Nmap) to create a seamless attack and defense simulation.
+
+Configuring network segmentation in the virtual lab to ensure the attack stays contained and doesn't affect other environments.
+
+Real-World Scenario:
+This project replicates the real-world challenge of defending against advanced ransomware attacks that often exploit network vulnerabilities to gain control of systems. In the enterprise setting, such attacks can lead to widespread data loss and business downtime.</p>
                 </div>
                 <div class="project-card">
-                    <h3>SIEM & Incident Response Analysis</h3>
-                    <p>Deployed Splunk for log analysis and correlation of security events.Investigated mock security incidents and implemented incident response procedures.</p>
+                    <h3>SOC & Threat Hunting Lab Environment (Simulated SOC)</h3>
+                    <p>Key Enhancements:
+
+Set up an automated alerting system for suspicious activities such as brute force attacks, privilege escalation, and data exfiltration using Splunk and ELK stack.
+
+Configured sysmon log forwarding to the SIEM (Splunk and ELK) for deeper visibility into Windows-based attack indicators.
+
+Integrated threat intel feeds to enrich logs and correlate with MITRE ATT&CK techniques, leading to more precise detection of adversary tactics.
+
+Measurable Outcomes:
+
+Successfully detected and responded to realistic attacks such as failed login attempts using Splunk’s KQL queries and ELK-based dashboards.
+
+Reduced false positives by tuning correlation rules and applying contextual analysis.
+
+Improved detection speed by automating repetitive tasks (e.g., suspicious process creation detection) with custom scripts and alerting mechanisms.
+
+Challenges Overcome:
+
+Configuring multi-source log forwarding (Sysmon, firewall, Active Directory logs) to centralize threat data.
+
+Fine-tuning the correlation rules to ensure that high-fidelity alerts are generated without overwhelming the system with false positives.
+
+Real-World Scenario:
+The SOC simulation reflects how modern SOCs handle large-scale log data analysis and automated detection of adversary behavior, a critical aspect of identifying attacks such as credential stuffing and insider threats within enterprise networks.
+
+</p>
                 </div>
                 <div class="project-card">
-                    <h3>Security Automation</h3>
-                    <p>Created automated security scripts for threat detection and response using Python and bash.</p>
+                    <h3>Phishing Email Analysis & Threat Intelligence Correlation</h3>
+                    <p>Key Enhancements:
+
+Leveraged email sandboxing techniques (e.g., using Cuckoo Sandbox) to isolate and analyze malicious email payloads, such as malicious attachments or malicious macros.
+
+Integrated YARA rule-based detections to automatically flag phishing URLs and malware signatures in email campaigns.
+
+Created a dashboard for tracking phishing campaigns in real-time, using ThreatConnect or OpenDXL for threat intelligence sharing.
+
+Measurable Outcomes:
+
+Reduced response time to phishing attempts by 50%, improving detection and remediation times.
+
+Developed a set of YARA rules that successfully detected over 90% of phishing emails and malicious attachments in a simulated environment.
+
+Contributed to automated threat intelligence correlation, linking IoCs (Indicators of Compromise) with external feeds like VirusTotal, AlienVault OTX, and HaveIBeenPwned.
+
+Challenges Overcome:
+
+Creating automated workflows for phishing email detection and dynamic alerting using tools like Cuckoo Sandbox and YARA.
+
+Identifying and blocking sophisticated phishing tactics that spoof legitimate sender addresses and use social engineering techniques.
+
+Real-World Scenario:
+Phishing is a primary vector for business email compromise (BEC) attacks and ransomware delivery. This project simulates how real-world enterprises can use AI-driven tools and open-source threat intelligence platforms to identify and block targeted phishing campaigns before they result in a data breach.</p>
                 </div>
             </div>
         </section>
